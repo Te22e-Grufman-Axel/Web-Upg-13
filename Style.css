@@ -80,7 +80,6 @@
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   body {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     margin: 0px;
   }
 
@@ -175,19 +174,13 @@
 @media screen and (max-width: 640px) {
   body {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-column: 1fr;
     margin: 0px;
   }
 
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #BåtBild {
-    width: 200px;
-    height: 200px;
-    margin: 50px;
+    grid-template-columns: 1fr;
   }
   header {
     background-image: url(./img/Vatten.webp);
@@ -196,40 +189,76 @@
     text-align: center;
     font-family: "Courier New", Courier, monospace;
     font-size: 100%;
-    height: 100px;
-    width: 900px;
-    margin: 60px;
-    /* margin-right: 300px; */
+    min-height: 100px;
+    min-width: 430px;
   }
   nav {
     display: flex;
     flex-direction: column;
-  }
-  #Sidknappar {
-    width: 300px;
-    height: 160px;
-    border: 0px;
-    padding: 0px;
-  }
-  #Toprighticons {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 75px;
-    border: 5px solid black;
-    margin-top: 60px;
-    margin-right: -50;
-  }
-  #ProfildBild {
-    margin-left: 25px;
-    margin-top: 10px;
+    max-width: 0px;
+    max-height: 0px;
+    opacity: 0%;
   }
   button {
     padding: 0px;
     border: 0px;
   }
-
+  #Top {
+    display: flex;
+    flex-direction: row;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;      
+  }
+  #BåtBild {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  #FöretagetsLåga {
+    max-width: 0px;
+    max-height: 0px;
+    max-width: 0px;
+    max-height: 0px;
+    border: 0px;
+    padding: 0px;
+    font-size: 0px;
+  }
+  #Toprighticons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 40px;
+    border: 5px solid black;
+    margin-top: 5px;
+    margin-left: -120px;
+  }
+  #ProfildBild {
+    margin-left: 20px;
+    margin-top: 5px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  #Shopingcart {
+    margin-top: 5px;
+    margin-left: 10px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  #ShopingcartBild {
+    width: 30px;
+    height: 30px;
+  }
   #Reklam {
-    margin-right: 400px;
+    width: 430px;
+    height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  #ReklamBild {
+    width: 430px;
+    max-height: 100px;
   }
 }
