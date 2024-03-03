@@ -1,22 +1,232 @@
-body
-{
+@media screen and (min-width: 1008px) {
+  body {
     display: grid;
-grid-template-columns: 1fr 3fr 1fr;
-}
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 0px;
+  }
 
-main
-{
-   display: grid; 
-   grid-template-columns: 1fr 1fr 1fr;
-}
-
-#BåtBild
-{
-    width: 200;
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #FöretagetsLåga
+  {
+    max-width:300px;
+    max-height:250px;
+    min-width: 300px;
+    min-height: 250px;
+  }
+  #BåtBild {
+    width: 200px;
     height: 200px;
     margin: 50px;
+  }
+  header {
+    background-image: url(./img/Vatten.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 100%;
+    height: 100px;
+    width: 900px;
+    margin: 60px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    padding: 0px;
+    border: 0px;
+  }
+  #Sidknappar {
+    width: 300px;
+    height: 160px;
+    border: 0px;
+    padding: 0px;
+  }
+  #Toprighticons {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 75px;
+    border: 5px solid black;
+    margin-top: 60px;
+  }
+  #ProfildBild {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  #Shopingcart
+  {
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 85px;
+    max-height: 45px;
+  }
+  #ShopingcartBild
+  {
+    max-width: 85px;
+    max-height: 45px;
+    min-width: 85px;
+    min-height: 45px;
+  }
+  #Reklam {
+    margin-right: 400px;
+  }
+  #Reklam{
+    width:300px;
+    height:900px;
+  }
 }
-header
-{
-    
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  body {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    margin: 0px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #BåtBild {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  #FöretagetsLåga
+  {
+    max-width:200px;
+    max-height:200px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+  header {
+    background-image: url(./img/Vatten.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 100%;
+    min-height: 200px;
+    min-width: 100%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 0px;
+    max-height: 0px;
+  }
+  #Sidknappar {
+    max-width: 0px;
+    max-height: 0px;
+    border: 0px;
+    padding: 0px;
+    font-size: 0px;
+  }
+  #Toprighticons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 50px;
+    border: 5px solid black;
+    margin-top: 60px;
+    margin-right: -50px;
+  }
+  #ProfildBild {
+    margin-left: 25px;
+    margin-top: 10px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+  #Shopingcart
+  {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  #ShopingcartBild
+  {
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  button {
+    padding: 0px;
+    border: 0px;
+  }
+  #Reklam{
+    width:770px;
+    height:300px;
+  }
+  #ReklamBild
+  {
+    width:770px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 0px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #BåtBild {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+  }
+  header {
+    background-image: url(./img/Vatten.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 100%;
+    height: 100px;
+    width: 900px;
+    margin: 60px;
+    /* margin-right: 300px; */
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #Sidknappar {
+    width: 300px;
+    height: 160px;
+    border: 0px;
+    padding: 0px;
+  }
+  #Toprighticons {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 75px;
+    border: 5px solid black;
+    margin-top: 60px;
+    margin-right: -50;
+  }
+  #ProfildBild {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  button {
+    padding: 0px;
+    border: 0px;
+  }
+
+  #Reklam {
+    margin-right: 400px;
+  }
 }
