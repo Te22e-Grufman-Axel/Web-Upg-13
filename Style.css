@@ -9,10 +9,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #FöretagetsLåga
-  {
-    max-width:300px;
-    max-height:250px;
+  #FöretagetsLåga {
+    max-width: 300px;
+    max-height: 250px;
     min-width: 300px;
     min-height: 250px;
   }
@@ -58,15 +57,13 @@
     margin-left: 25px;
     margin-top: 10px;
   }
-  #Shopingcart
-  {
+  #Shopingcart {
     margin-top: 10px;
     margin-left: 10px;
     max-width: 85px;
     max-height: 45px;
   }
-  #ShopingcartBild
-  {
+  #ShopingcartBild {
     max-width: 85px;
     max-height: 45px;
     min-width: 85px;
@@ -75,9 +72,9 @@
   #Reklam {
     margin-right: 400px;
   }
-  #Reklam{
-    width:300px;
-    height:900px;
+  #Reklam {
+    width: 300px;
+    height: 900px;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1007px) {
@@ -91,20 +88,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  #BåtBild {
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
-    margin-left: 100px;
-  }
-  #FöretagetsLåga
-  {
-    max-width:200px;
-    max-height:200px;
-    min-width: 200px;
-    min-height: 200px;
-  }
   header {
     background-image: url(./img/Vatten.webp);
     background-repeat: no-repeat;
@@ -113,7 +96,7 @@
     font-family: "Courier New", Courier, monospace;
     font-size: 100%;
     min-height: 200px;
-    min-width: 100%;
+    min-width: 568px;
   }
   nav {
     display: flex;
@@ -121,6 +104,30 @@
     max-width: 0px;
     max-height: 0px;
   }
+  button {
+    padding: 0px;
+    border: 0px;
+  }
+  #Top {
+    display: flex;
+    flex-direction: row;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;    
+  }
+  #BåtBild {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  #FöretagetsLåga {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+
   #Sidknappar {
     max-width: 0px;
     max-height: 0px;
@@ -134,39 +141,35 @@
     width: 100px;
     height: 50px;
     border: 5px solid black;
-    margin-top: 60px;
-    margin-right: -50px;
+    margin-top: 30px;
+    margin-left: -140px;
   }
   #ProfildBild {
-    margin-left: 25px;
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
     max-width: 40px;
     max-height: 40px;
   }
-  #Shopingcart
-  {
+  #Shopingcart {
+    margin-top: 5px;
+    margin-left: 5px;
     max-width: 40px;
     max-height: 40px;
   }
-  #ShopingcartBild
-  {
-    max-width: 40px;
-    max-height: 40px;
-    min-width: 40px;
-    min-height: 40px;
+  #ShopingcartBild {
+    width: 40px;
+    height: 40px;
   }
-  button {
-    padding: 0px;
-    border: 0px;
+  #Reklam {
+    width: 770px;
+    height: 150px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
   }
-  #Reklam{
-    width:770px;
-    height:300px;
-  }
-  #ReklamBild
-  {
-    width:770px;
-    max-height: 300px;
+  #ReklamBild {
+    width: 770px;
+    max-height: 150px;
   }
 }
 @media screen and (max-width: 640px) {
