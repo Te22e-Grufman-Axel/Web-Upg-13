@@ -1,0 +1,12 @@
+#Shopingcart:hover,
+#Shopingcart:focus{
+    background-color: lightblue;
+    color: black;
+}
+#Varukorg1{
+    display: block;
+}
+#Varukorg2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
