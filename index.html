@@ -8,42 +8,44 @@
   </head>
   <body>
     <div id="Top">
-    <img
-      src="./img/Loga2.webp"
-      alt="Företagets loga"
-      id="FöretagetsLåga"
-    />
-    <header>
-      <h1>BåtShop</h1>
-    </header>
-    <div id="Toprighticons">
-      <button type="button" id="Shopingcart">
+      <img src="./img/Loga2.webp" alt="Företagets logga" id="FöretagetsLogga" />
+      <header>
+        <h1>BåtShop</h1>
+      </header>
+      <div id="Toprighticons">
+        <button type="button" id="Shopingcart">
+          <img
+            src="./img/download.webp"
+            alt="En shopping cart"
+            id="ShopingcartBild"
+          />
+          <div id="Varukorg">
+            <article id="BåtDrop">
+
+            </article>
+          </div>
+        </button>
         <img
-          src="./img/download.webp"
-          alt="En shopping cart"
-          id="ShopingcartBild"
+          src="./img/spelari_ngen.webp"
+          alt="Din profilbild"
+          width="50px"
+          height="50px"
+          id="ProfilBild"
         />
-      </button>
-      <img
-        src="./img/spelari_ngen.webp"
-        alt="Din profild bild"
-        width="50px"
-        height="50px"
-        id="ProfildBild"
-      />
+      </div>
     </div>
-  </div>
-    <nav>
-      <button type="button" id="Sidknappar">Din profil</button>
-      <button type="button" id="Sidknappar">Om oss</button>
-      <button type="button" id="Sidknappar">Kontakta oss</button>
-      <button type="button" id="Sidknappar">Instälnignar</button>
-      <button type="button" id="Sidknappar">Platser</button>
-      <button type="button" id="Sidknappar">Sälj din båt</button>
-    </nav>
+    <div id="Botten">
+      <nav>
+        <button type="button" id="Sidknappar">Din profil</button>
+        <button type="button" id="Sidknappar">Inställningar</button>
+        <button type="button" id="Sidknappar">Platser</button>
+        <button type="button" id="Sidknappar">Sälj din båt</button>
+        <button type="button" id="Sidknappar">Om oss</button>
+        <button type="button" id="Sidknappar">Kontakta oss</button>
+      </nav>
       <main>
         <article>
-          <button type="button" id="BåtBild">
+          <button type="button" id="BåtBild" onclick="addtocart('Båt1')">
             <img
               src="./img/Lyxbåt1.webp"
               alt="En bild på Lyxbåt1"
@@ -51,9 +53,10 @@
               height="200"
             />
           </button>
+          <p>Pris: 100000 kr</p>
         </article>
         <article>
-          <button type="button" id="BåtBild">
+          <button type="button" id="BåtBild" onclick="addtocart('Båt2')">
             <img
               src="./img/Lyxbåt2.webp"
               alt="En bild på Lyxbåt2"
@@ -61,9 +64,10 @@
               height="200"
             />
           </button>
+          <p>Pris:150000 kr</p>
         </article>
         <article>
-          <button type="button" id="BåtBild">
+          <button type="button" id="BåtBild" onclick="addtocart('Båt3')">
             <img
               src="./img/Lyxbåt3.webp"
               alt="En bild på Lyxbåt3"
@@ -71,9 +75,10 @@
               height="200"
             />
           </button>
+          <p>Pris:169000 kr</p>
         </article>
         <article>
-          <button type="button" id="BåtBild">
+          <button type="button" id="BåtBild" onclick="addtocart('Båt4')">
             <img
               src="./img/Lyxbåt4.webp"
               alt="En bild på Lyxbåt4"
@@ -81,9 +86,10 @@
               height="200"
             />
           </button>
+          <p>Pris:1.200000 kr</p>
         </article>
         <article>
-          <button type="button" id="BåtBild">
+          <button type="button" id="BåtBild" onclick="addtocart('Båt5')">
             <img
               src="./img/Lyxbåt5.webp"
               alt="En bild på Lyxbåt5"
@@ -91,9 +97,10 @@
               height="200"
             />
           </button>
+          <p>Pris:300000 kr</p>
         </article>
         <article>
-          <button type="button" id="BåtBild">
+          <button type="button" id="BåtBild" onclick="addtocart('Båt6')">
             <img
               src="./img/Lyxbåt6.webp"
               alt="En bild på Lyxbåt6"
@@ -101,6 +108,7 @@
               height="200"
             />
           </button>
+          <p>Pris:1.50000000 kr</p>
         </article>
       </main>
       <div id="Reklam">
@@ -110,6 +118,7 @@
           id="ReklamBild"
         />
       </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
