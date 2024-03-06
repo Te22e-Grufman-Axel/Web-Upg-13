@@ -1,37 +1,55 @@
 #Shopingcart:hover,
-#Shopingcart:focus{
-    background-color: lightblue;
-    color: black;
+#Shopingcart:focus {
+  background-color: lightblue;
+  color: black;
 }
+#DropDownMeny:hover #Varukorg1 {
+  display: block;
+}
+#Varukorg1 {
+  display: none;
+  background-color: gray;
+  width: 260px;
+  height: 1050;
+  margin-left: -270px;
+  margin-right: 20px;
+  margin-top: -65px;
+  position: absolute;
+  border-radius: 20px;
+}
+#Varukorg2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  min-height: 1000px;
+  margin-left: 20px;
+}
+#BåtDrop1,
+#BåtDrop2,
+#BåtDrop3,
+#BåtDrop4,
+#BåtDrop5,
+#BåtDrop6 {
+  text-align: center;
+  border: 10px black solid;
+  background-color: white;
+  margin-top: 10px;
+  width: 200px;
+  height: 135px;
+  display: none;
+}
+#DropDownBild {
+  width: 180px;
+  height: 100px;
+}
+#Pris {
+  margin: 3px;
+}
+@media screen and (max-width: 1007px) {
 #Varukorg1{
-    display: block;
-    background-color: gray;
-    width:260px ;
-    height: 1050;
-    margin-left: -270px;
-    margin-right: 20px;
-    margin-top: -65px;
-    position: absolute;
-    border-radius: 20px;
+    overflow-y: scroll;
+    
 }
-#Varukorg2{
-    display: grid;
-    grid-template-rows: 2fr 2fr 2fr;
-    min-height: 1000px;
-    margin-left: 20px;
+#Varukorg1::-webkit-scrollbar{
+    display: none;
 }
-#BåtDrop{
-    text-align: center;
-    border: 10px black solid;
-    background-color: white;
-    margin-top: 10px;
-    width: 200px;
-    height: 135px;
-}
-#DropDownBild{
-    width: 180px;
-    height: 100px;
-}
-#Pris{
-    margin: 3px;
 }
