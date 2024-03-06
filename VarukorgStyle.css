@@ -5,8 +5,33 @@
 }
 #Varukorg1{
     display: block;
+    background-color: gray;
+    width:260px ;
+    height: 1050;
+    margin-left: -270px;
+    margin-right: 20px;
+    margin-top: -65px;
+    position: absolute;
+    border-radius: 20px;
 }
 #Varukorg2{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    min-height: 1000px;
+    margin-left: 20px;
+}
+#BåtDrop{
+    text-align: center;
+    border: 10px black solid;
+    background-color: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 135px;
+}
+#DropDownBild{
+    width: 180px;
+    height: 100px;
+}
+#Pris{
+    margin: 3px;
 }
